@@ -101,28 +101,28 @@ function draw(){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count +  "    +    "  +  count2 ,width/100,200)
+      text(count +  "    +    "  +  count2 ,width/100,(width-width)+200)
     }
 
     if(sign===2){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count +  "    -    "  +  count2 ,width/100,200)
+      text(count +  "    -    "  +  count2 ,width/100,(width-width)+200)
     }
 
     if(sign===3){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count +  "    ×    "  +  count2 ,width/100,200)
+      text(count +  "    ×    "  +  count2 ,width/100,(width-width)+200)
     }
 
     if(sign===4){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count +  "    ÷    "  +  count2 ,width/100,200)
+      text(count +  "    ÷    "  +  count2 ,width/100,(width-width)+200)
     }
    
    
@@ -145,7 +145,7 @@ function draw(){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count +  "    +    "  +  count2 ,10,200);
+      text(count +  "    +    "  +  count2 ,10,(width-width)+200);
       count3=Math.round(count+count2);
     }
 
@@ -153,7 +153,7 @@ function draw(){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count +  "    -    "  +  count2 ,width/100,200)
+      text(count +  "    -    "  +  count2 ,width/100,(height-height)+200)
       count3=Math.round(count-count2);
     }
 
@@ -161,7 +161,7 @@ function draw(){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count2 +  "    -    "  +  count ,width/100,200)
+      text(count2 +  "    -    "  +  count ,width/100,(height-height)+200)
       count3=Math.round(count2-count);
     }
 
@@ -169,7 +169,7 @@ function draw(){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count2 +  "    -    "  +  count ,width/100,200)
+      text(count2 +  "    -    "  +  count ,width/100,(height-height)+200)
       count3=Math.round(count2-count);
     }
 
@@ -177,7 +177,7 @@ function draw(){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count +  "    ×    "  +  count2 ,width/100,200);
+      text(count +  "    ×    "  +  count2 ,width/100,(height-height)+200);
       count3=Math.round(count*count2);
     }
 
@@ -185,7 +185,7 @@ function draw(){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count +  "    ÷    "  +  count2 ,width/100,200)
+      text(count +  "    ÷    "  +  count2 ,width/100,(height-height)+200)
       count3=(count/count2)
     }
     
@@ -193,7 +193,7 @@ function draw(){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count2 +  "    ÷    "  +  count ,width/100,200)
+      text(count2 +  "    ÷    "  +  count ,width/100,(height-height)+200)
       count3=(count2/count);
     }
 
@@ -201,14 +201,14 @@ function draw(){
       fill("white");
       stroke("red")
       textSize(250)
-      text(count2 +  "    ÷    "  +  count ,width/100,200)
+      text(count2 +  "    ÷    "  +  count ,width/100,(width-width)+200)
       count3=Math.round(count2/count);
     }
     
     fill("white");
     stroke("red")
     textSize(250)
-    text("= "+count3,200,600)
+    text("= "+count3,200,height-100)
     
 
 
